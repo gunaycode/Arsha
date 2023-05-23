@@ -1,0 +1,282 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\admin\plugins\bower_components\chartist-js\dist\chartist-init.css" />
+    <Content Include="wwwroot\admin\plugins\bower_components\chartist-js\dist\chartist.css" />
+    <Content Include="wwwroot\admin\plugins\bower_components\chartist-js\dist\chartist.min.css" />
+    <Content Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\bower.json" />
+    <Content Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\dist\chartist-plugin-tooltip.css" />
+    <Content Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\package.json" />
+    <Content Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\src\css\chartist-plugin-tooltip.css" />
+    <Content Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\test\runner.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\jquery\.bower.json" />
+    <Content Include="wwwroot\admin\plugins\bower_components\jquery\bower.json" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\.bower.json" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\bower.json" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\bower.travis.json" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\area-as-line.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\area.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\bar-colors.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\bar-no-axes.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\bar.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\days.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\decimal-custom-hover.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\diagonal-xlabels-bar.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\diagonal-xlabels.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\donut-colors.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\donut-formatter.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\donut.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\dst.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\events.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\goals.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\lib\example.css" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\months-no-smooth.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\negative.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\no-grid.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\non-continuous.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\non-date.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\quarters.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\resize.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\stacked_bars.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\timestamps.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\updating.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\weeks.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\years.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\_template.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\morris.css" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\package.json" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\specs.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\viz\exemplary\area0.png" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\viz\exemplary\bar0.png" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\viz\exemplary\line0.png" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\viz\exemplary\stacked_bar0.png" />
+    <Content Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\viz\test.html" />
+    <Content Include="wwwroot\admin\plugins\bower_components\sidebar-nav\.bower.json" />
+    <Content Include="wwwroot\admin\plugins\bower_components\sidebar-nav\bower.json" />
+    <Content Include="wwwroot\admin\plugins\bower_components\sidebar-nav\dist\sidebar-nav.css" />
+    <Content Include="wwwroot\admin\plugins\bower_components\sidebar-nav\dist\sidebar-nav.min.css" />
+    <Content Include="wwwroot\admin\plugins\bower_components\sidebar-nav\package.json" />
+    <Content Include="wwwroot\admin\plugins\bower_components\sidebar-nav\src\metisMenu.css" />
+    <Content Include="wwwroot\admin\plugins\bower_components\toast-master\css\jquery.toast.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-js\dist\chartist-init.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-js\dist\chartist.css.map" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-js\dist\chartist.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-js\dist\chartist.min.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-js\dist\chartist.min.js.map" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-js\dist\scss\chartist.scss" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-js\dist\scss\settings\_chartist-settings.scss" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\.gitignore" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\CHANGELOG.md" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\dist\chartist-plugin-tooltip.css.map" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\dist\chartist-plugin-tooltip.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\dist\chartist-plugin-tooltip.min.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\dist\chartist-plugin-tooltip.min.js.map" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\dist\LICENSE" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\Gruntfile.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\LICENSE" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\README.md" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\src\css\chartist-plugin-tooltip.css.map" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\src\scripts\chartist-plugin-tooltip.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\src\scss\chartist-plugin-tooltip.scss" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\tasks\aliases.yml" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\tasks\clean.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\tasks\copy.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\tasks\jasmine.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\tasks\jshint.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\tasks\sass.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\tasks\uglify.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\tasks\umd.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\test\.jshintrc" />
+    <None Include="wwwroot\admin\plugins\bower_components\chartist-plugin-tooltip-master\test\spec\spec-tooltip.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\counterup\jquery.counterup.min.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\gmaps.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\gmaps.min.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\gmaps.min.js.map" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\jquery.gmaps.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\lib\gmaps.controls.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\lib\gmaps.core.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\lib\gmaps.events.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\lib\gmaps.geofences.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\lib\gmaps.geometry.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\lib\gmaps.layers.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\lib\gmaps.map_types.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\lib\gmaps.markers.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\lib\gmaps.native_extensions.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\lib\gmaps.overlays.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\lib\gmaps.routes.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\lib\gmaps.static.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\lib\gmaps.streetview.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\lib\gmaps.styles.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\gmaps\lib\gmaps.utils.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery-sparkline\jquery.charts-sparkline.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery-sparkline\jquery.sparkline.min.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\dist\jquery.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\dist\jquery.min.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\dist\jquery.min.map" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\ajax.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\ajax\jsonp.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\ajax\load.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\ajax\parseJSON.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\ajax\parseXML.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\ajax\script.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\ajax\var\nonce.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\ajax\var\rquery.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\ajax\xhr.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\attributes.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\attributes\attr.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\attributes\classes.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\attributes\prop.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\attributes\support.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\attributes\val.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\callbacks.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\core.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\core\access.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\core\init.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\core\parseHTML.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\core\ready.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\core\var\rsingleTag.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\css.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\css\addGetHookIf.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\css\curCSS.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\css\defaultDisplay.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\css\hiddenVisibleSelectors.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\css\support.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\css\swap.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\css\var\cssExpand.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\css\var\getStyles.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\css\var\isHidden.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\css\var\rmargin.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\css\var\rnumnonpx.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\data.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\data\accepts.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\data\Data.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\data\var\data_priv.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\data\var\data_user.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\deferred.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\deprecated.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\dimensions.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\effects.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\effects\animatedSelector.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\effects\Tween.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\event.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\event\ajax.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\event\alias.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\event\support.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\exports\amd.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\exports\global.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\intro.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\jquery.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\manipulation.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\manipulation\support.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\manipulation\var\rcheckableType.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\manipulation\_evalUrl.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\offset.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\outro.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\queue.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\queue\delay.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\selector-native.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\selector-sizzle.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\selector.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\serialize.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\sizzle\dist\sizzle.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\sizzle\dist\sizzle.min.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\sizzle\dist\sizzle.min.map" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\traversing.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\traversing\findFilter.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\traversing\var\rneedsContext.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\var\arr.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\var\class2type.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\var\concat.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\var\hasOwn.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\var\indexOf.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\var\pnum.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\var\push.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\var\rnotwhite.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\var\slice.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\var\strundefined.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\var\support.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\var\toString.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\jquery\src\wrap.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\.gitignore" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\.travis.yml" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\examples\lib\example.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\Gruntfile.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\less\morris.core.less" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\lib\morris.area.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\lib\morris.bar.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\lib\morris.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\lib\morris.donut.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\lib\morris.grid.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\lib\morris.hover.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\lib\morris.line.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\morris.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\morris.min.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\README.md" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\lib\area\area_spec.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\lib\bar\bar_spec.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\lib\bar\colours.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\lib\commas_spec.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\lib\donut\donut_spec.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\lib\grid\auto_grid_lines_spec.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\lib\grid\set_data_spec.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\lib\grid\y_label_format_spec.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\lib\hover_spec.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\lib\label_series_spec.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\lib\line\line_spec.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\lib\pad_spec.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\lib\parse_time_spec.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\support\placeholder.coffee" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\viz\examples.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\viz\run.sh" />
+    <None Include="wwwroot\admin\plugins\bower_components\morrisjs\spec\viz\visual_specs.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\sidebar-nav\dist\sidebar-nav.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\sidebar-nav\dist\sidebar-nav.min.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\sidebar-nav\Gruntfile.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\sidebar-nav\LICENSE" />
+    <None Include="wwwroot\admin\plugins\bower_components\sidebar-nav\README.md" />
+    <None Include="wwwroot\admin\plugins\bower_components\sidebar-nav\src\metisMenu.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\toast-master\js\jquery.toast.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\waypoints\lib\jquery.waypoints.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\waypoints\lib\jquery.waypoints.min.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\waypoints\lib\noframework.waypoints.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\waypoints\lib\noframework.waypoints.min.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\waypoints\lib\shortcuts\infinite.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\waypoints\lib\shortcuts\infinite.min.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\waypoints\lib\shortcuts\inview.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\waypoints\lib\shortcuts\inview.min.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\waypoints\lib\shortcuts\sticky.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\waypoints\lib\shortcuts\sticky.min.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\waypoints\lib\waypoints.debug.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\waypoints\lib\zepto.waypoints.js" />
+    <None Include="wwwroot\admin\plugins\bower_components\waypoints\lib\zepto.waypoints.min.js" />
+  </ItemGroup>
+
+</Project>

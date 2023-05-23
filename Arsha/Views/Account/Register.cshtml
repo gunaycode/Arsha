@@ -1,0 +1,51 @@
+﻿@using Arsha.ViewModels.AccountVM;
+@model RegisterVM
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                <form  method="post" role="form" role="form">
+                    <div asp-validation-summary="ModelOnly"></div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Name">Your Name</label>
+                            <input asp-for="Name" class="form-control">
+                            <span asp-validation-for="Name"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="Surname">Surname</label>
+                            <input asp-for="Surname" class="form-control" >
+                            <span asp-validation-for="Surname"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="Email">Email</label>
+                            <input asp-for="Email" class="form-control" >
+                            <span asp-validation-for="Email"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Password">Password</label>
+                        <input asp-for="Password" class="form-control"  id="subject">
+                        <span asp-validation-for="Password"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ConfirmPassword">ConfrimPassword</label>
+                        <input asp-for="ConfirmPassword" class="form-control" id="subject">
+                        <span asp-validation-for="ConfirmPassword"></span>
+                    </div>
+                    <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Register</button></div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</section><!-- End Contact Section -->

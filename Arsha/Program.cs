@@ -17,8 +17,8 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
 {
     opt.Password.RequiredLength = 8;
     opt.Password.RequireDigit = true;
-    opt.SignIn.RequireConfirmedEmail = false;
-    opt.User.RequireUniqueEmail = false;
+    opt.SignIn.RequireConfirmedEmail = true;
+    opt.User.RequireUniqueEmail = true;
     
 
 })
@@ -41,6 +41,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

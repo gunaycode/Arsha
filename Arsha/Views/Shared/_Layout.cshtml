@@ -73,8 +73,20 @@
                             <li><a href="#">Drop Down 4</a></li>
                         </ul>
                     </li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li><p class="getstarted scrollto">@User.Identity.Name</p></li>
+                        <li>
+                            <form method="post" asp-controller="Account" asp-action="LogOut">
+                                <button class="btn btn-danger" type="submit">Logout</button>
+                            </form>
+                        </li>
+
+                    }
+                    else{
                     <li><a class="nav-link scrollto" asp-controller="Account" asp-action="Login">Login</a></li>
                     <li><a class="getstarted scrollto" asp-controller="Account" asp-action="Register">Register</a></li>
+                    }
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->

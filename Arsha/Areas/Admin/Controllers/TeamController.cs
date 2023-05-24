@@ -1,6 +1,7 @@
 ﻿using Arsha.DataContext;
 using Arsha.Models;
 using Arsha.ViewModels.TeamVM;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Arsha.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles ="SuperAdmin")]
     public class TeamController:Controller
     {
         public readonly ArshaDbContext _arshaDbContext;

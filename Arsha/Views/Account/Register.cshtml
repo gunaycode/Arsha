@@ -21,6 +21,11 @@
                             <span asp-validation-for="Surname"></span>
                         </div>
                         <div class="form-group col-md-6">
+                            <label asp-for="UserName">UserName</label>
+                            <input asp-for="UserName" class="form-control">
+                            <span asp-validation-for="UserName"></span>
+                        </div>
+                        <div class="form-group col-md-6">
                             <label asp-for="Email">Email</label>
                             <input asp-for="Email" class="form-control" >
                             <span asp-validation-for="Email"></span>
@@ -28,12 +33,12 @@
                     </div>
                     <div class="form-group">
                         <label asp-for="Password">Password</label>
-                        <input asp-for="Password" class="form-control"  id="subject">
+                        <input asp-for="Password" class="form-control">
                         <span asp-validation-for="Password"></span>
                     </div>
                     <div class="form-group">
                         <label asp-for="ConfirmPassword">ConfrimPassword</label>
-                        <input asp-for="ConfirmPassword" class="form-control" id="subject">
+                        <input asp-for="ConfirmPassword" class="form-control" >
                         <span asp-validation-for="ConfirmPassword"></span>
                     </div>
                     <div class="my-3">
